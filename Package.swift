@@ -5,7 +5,6 @@ let package = Package(
     name: "IGColorPicker",
     platforms: [
         .iOS(.v9),
-        .macOS(.v10_10),
     ],
     products: [
         .library(name: "IGColorPicker", targets: ["IGColorPicker"])
@@ -17,7 +16,7 @@ let package = Package(
         .target(
             name: "IGColorPicker",
             dependencies: ["M13Checkbox"],
-            path: "IGColorPicker/Classes/**/*",
+            path: "IGColorPicker/Classes",
             publicHeadersPath: ""
         )
     ]
